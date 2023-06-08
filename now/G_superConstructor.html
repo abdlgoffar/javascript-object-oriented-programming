@@ -1,0 +1,28 @@
+<html>
+    <script>
+        
+        class Animal {
+            constructor(name) {
+                
+            }
+
+            hello() {
+                return "me your pet";
+            }
+        }
+
+       
+        class Person extends Animal {
+            //super constructor adalah konsep menurunkan constructor parent class ke child class
+            //aturan membuat constructor pada child class
+            //jika ingin membuat constructor pada child class dan parent class mempunyai constructor juga maka child class wajib memangil constructor parent class nya dengan keyword super().
+            //jika child class tidak mempunayi constructor dan parent class mempunyai constructor maka secara otomatis child class akan mempunyai constructor seperti parent class nya.
+            constructor(name, address) {
+                super(name)
+            }
+        }
+
+
+        
+    </script>
+</html>

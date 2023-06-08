@@ -1,0 +1,19 @@
+<html>
+    <script>
+        //class 01
+        function Animal(name) {
+            this.have = function (name) {
+                console.log(name);
+            }
+        };
+
+        //class 02
+        function Person() {
+            //cara menurunkan atau inheritance class \, dengan method call.
+            this.name = "cow and dog";
+            Animal.call(this, name);
+        }
+        const goffar = Person();
+        console.log(goffar);
+    </script>
+</html>
